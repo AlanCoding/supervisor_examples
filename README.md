@@ -8,7 +8,7 @@ http://supervisord.org/configuration.html
 The command to run this in the foreground is this:
 
 ```
-supervisord --pidfile=./supervisor_pid --configuration=demo.conf -n
+supervisord --pidfile=./supervisor_pid --configuration=demo.conf --nodaemon
 ```
 
 While you have that running, you should check on it in another tab:

@@ -21,8 +21,9 @@ That should give output like this:
 
 ```
 $ supervisorctl --configuration=demo.conf status
-demo-processes:fail-slowly       STARTING  
-demo-processes:fail-too-fast     FATAL     Exited too quickly (process log may have details)
+fail-slowly                      RUNNING   pid 1022768, uptime 0:00:03
+fail-too-fast                    FATAL     Exited too quickly (process log may have details)
+fail-zero                        RUNNING   pid 1022789, uptime 0:00:00
 ```
 
 You probably want to run this in a virtual environment, I used `python script.py`
